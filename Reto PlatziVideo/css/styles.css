@@ -1,0 +1,176 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin: 0 100px;
+}
+.container {
+  display: grid;
+  grid-template: 400px 170px 1fr / 350px 1fr 1fr;
+  grid-template-areas:  "playlist play play" 
+                        "playlist play-data play-data"
+                        "playlist comments suggestions" ;
+}
+.playlist {
+  grid-area: playlist;
+  grid-template-rows: 20px 100px 20px;
+  grid-template-areas:  "logo" 
+                        "me-playlist"
+                        "friends-playlist" ;
+  background-color: #151b30;
+  color: #e7e8fc;
+  padding: 20px;
+  font-size: 17px;
+  text-transform: capitalize;
+  border: none;
+}
+.playlist span {
+  font-size: 20px;
+}
+.logo {
+  grid-area: logo;
+  padding-bottom: 20px;
+}
+.me-playlist {
+  grid-area: me-playlist;
+  padding-bottom: 40px;
+}
+.me-playlist ol li {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.me-playlist ol li:hover {
+  background-color: #f81f0b;
+  cursor: pointer;
+}
+.friends-playlist {
+  grid-area: friends-playlist;
+}
+.friends-playlist img {
+  max-width: 40px;
+}
+.friends-playlist ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+.friends-playlist ul li{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.friends-playlist ul li:hover{
+  background-color: #f81f0b;
+  cursor: pointer;
+}
+.friends-playlist ul li img{
+  padding-right: 10px;
+}
+.friends-playlist ul li p {
+  margin: 0;
+}
+.play {
+  grid-area: play;
+  border: none;
+}
+.play iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.play-data {
+  grid-area: play-data;
+  padding: 20px;
+  border: 1px solid blue;
+  border-bottom: 1px solid  #b7b7b7;
+}
+.play-data h2 {
+  font-size: 20px;
+  color: darkblue;
+  margin-bottom: 5px;
+}
+.play-data p {
+  color: #acacac;
+  margin-top: 5px;
+}
+.play-data .buttons {
+  display: flex;
+  align-items: center;
+}
+.play-data .buttons .add {
+  background-color: #f81f0b;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+}
+.play-data .buttons .add:hover {
+  background-color: #f96396;
+}
+.share{
+  color: darkblue;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 70px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.share:hover{
+  background-color: #e0e0e0;
+}
+.save{
+  color: darkblue;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 60px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.save:hover{
+  background-color: #e0e0e0;
+}
+.eletronic {
+  color: white;
+  background-color: purple;
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+  margin-right: 10px;
+}
+.rock {
+  color: white;
+  background-color: #39d7b5;
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+  margin-right: 10px;
+}
+.old {
+  color: white;
+  background-color: RED;
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+  margin-right: 10px;
+}
+.muppet {
+  color: white;
+  background-color: orangered;
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+  margin-right: 10px;
+}
+.comments {
+  grid-area: comments;
+  border: 1px solid pink;
+}
+.suggestions {
+  grid-area: suggestions;
+  border: 1px solid #b7b7b7;
+}
