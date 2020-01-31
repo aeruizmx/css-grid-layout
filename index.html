@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curso de CSS Grid Layout</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 100px;
+      background-color: #white;
+    }
+    h1 {
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      gap: 20px;
+      grid-template: repeat(4, 200px) / repeat( 5, 1fr);
+    }
+    .link {
+      background-color: #2291e5;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    .link:hover{
+      background-color: white;
+      border: 1px solid #2291e5;
+      color:#2291e5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Curso de CSS Grid Layout</h1>
+  <div class="container">
+    <a class="link" href="">
+      <h3>Columnas</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Filas</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Displays</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Espaciado</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Funciones</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Areas</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Column Size</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Row Size</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Nombre lineas</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Grid Implícito</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Alineando Items</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Alineando Contenido</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Instragram</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Pinterest</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Platzi</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Reto: Movie.es</h3>
+    </a>
+    <a class="link" href="">
+      <h3>Reto: PlatziVideo</h3>
+    </a>
+  </div>
+</body>
+</html>
